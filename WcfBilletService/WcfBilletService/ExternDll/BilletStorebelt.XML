@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletStorebelt</name>
+    </assembly>
+    <members>
+        <member name="T:BilletStorebelt.Bil">
+            <summary>
+            Klasse Bil som arver fra Køretøjer klassen.
+            </summary>
+        </member>
+        <member name="M:BilletStorebelt.Bil.#ctor(System.String,System.Boolean)">
+            <summary>
+            constructor af bil.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="broBizz"></param>
+        </member>
+        <member name="M:BilletStorebelt.Bil.Pris">
+            <summary>
+            Metode som finder ud af prisen for en bil. (Brobizz etc. er includeret).
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletStorebelt.Bil.Køretøj">
+            <summary>
+            override så køretøj er Bil.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletStorebelt.BilØresund">
+            <summary>
+            Klasse BilØresund som arver fra køretøjer klassen.
+            </summary>
+        </member>
+        <member name="M:BilletStorebelt.BilØresund.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor af biløresund.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="broBizz"></param>
+        </member>
+        <member name="M:BilletStorebelt.BilØresund.Køretøj">
+            <summary>
+            sætter køretøj til "Øresund Bil".
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletStorebelt.BilØresund.Pris">
+            <summary>
+            Finder ud af prisen for Øresund Bil. (brobizz inc.)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletStorebelt.Køretøjer">
+            <summary>
+            Abstract klasse Køretøj.
+            </summary>
+        </member>
+        <member name="P:BilletStorebelt.Køretøjer.Nummerplade">
+            <summary>
+            Prop som bliver arvet i de andre klasser.
+            </summary>
+        </member>
+        <member name="M:BilletStorebelt.Køretøjer.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor for køretøjerne.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="broBizz"></param>
+        </member>
+        <member name="M:BilletStorebelt.Køretøjer.Pris">
+            <summary>
+            Abstract pris.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletStorebelt.Køretøjer.NummerpladeLænge">
+            <summary>
+            Metoder der sørger for at nummerpladen ikke er over 7.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletStorebelt.MC">
+            <summary>
+            Klasse over MC som arver fra Køretøjer klassen.
+            </summary>
+        </member>
+        <member name="M:BilletStorebelt.MC.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor for MC.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="broBizz"></param>
+        </member>
+        <member name="M:BilletStorebelt.MC.Pris">
+            <summary>
+            Udregner pris af MC. (brobizz inc.)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletStorebelt.MC.Køretøj">
+            <summary>
+            overrider at køretøj er MC.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:BilletStorebelt.MCØresund">
+            <summary>
+            Klasse over MCØresund som arver fra Køretøjer klassen.
+            </summary>
+        </member>
+        <member name="M:BilletStorebelt.MCØresund.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor over en MC Øresund.
+            </summary>
+            <param name="nummerplade"></param>
+            <param name="broBizz"></param>
+        </member>
+        <member name="M:BilletStorebelt.MCØresund.Køretøj">
+            <summary>
+            Sætter køretøj = Øresund MC.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BilletStorebelt.MCØresund.Pris">
+            <summary>
+            Udregner pris (brobizz inc.)
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
